@@ -72,7 +72,7 @@ function StackPage() {
 								key={index}
 								className={`btn relative inline-block  rounded-3xl font-gruppo font-bold uppercase group py-3 px-10 my-5 ${getRandomPadding()}`}>
 								<span className="absolute rounded-3xl inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-								<span className="absolute rounded-3xl inset-0 w-full h-full bg-[#f4fcff] border-2 border-black "></span>
+								<span className="absolute rounded-3xl inset-0 w-full h-full bg-[#c2c7ff] border-2 border-black "></span>
 								<span className="relative rounded-3xl text-black ">{tags}</span>
 							</button>
 						))}

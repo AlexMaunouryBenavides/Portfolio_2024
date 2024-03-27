@@ -17,7 +17,7 @@ function Footer() {
 					</Link>
 				))}
 			</div>
-			<p className="font-gruppo text-[12px] pt-[32px] ">Design et dev par Alexandre maunoury © 2024</p>
+			<p className="font-gruppo text-[12px] pt-[32px] ">Design et dev par Alexandre Maunoury © 2024</p>
 		</div>
 	);
 }

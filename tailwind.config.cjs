@@ -8,13 +8,13 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        'clamp': ['clamp(24px, 5vw, 80px)']
+        'clamp': ['clamp(30px, 5vw, 80px)']
       },
       spacing: {
         'clamp': 'clamp(20px, 10vw,450px)'
       },
       boxShadow: {
-        'custom': '3px 3px 0px rgba(0, 0, 0, 0.05)',
+        'custom': '3px 3px 5px rgba(0, 0, 0, 0.2)',
       },
       fontFamily: {
         'genos': ['Genos', 'sans-serif'],
