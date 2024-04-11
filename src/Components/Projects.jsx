@@ -29,21 +29,21 @@ function Projects() {
 							</div>
 							<div className="flex items-center gap-5 p-5">
 								{item.liens.github.trim() !== '' ? (
-									<Link target="_blank" to={item.liens.github}>
+									<a target="_blank" href={item.liens.github}>
 										<div className="flex items-center gap-2">
 											<p className="hover:text-[#8f95d3] duration-150">Code</p>
 											<img className="h-6" src={Github} alt="Lien de redirection vers le gitHub du projet" />
 										</div>
-									</Link>
+									</a>
 								) : (
 									''
 								)}
-								<Link target="_blank" to={item.liens.site}>
+								<a target="_blank" href={item.liens.site}>
 									<div className="flex items-center gap-2">
 										<p className="hover:text-[#8f95d3] duration-150">Live demo</p>
 										<img className="h-6" src={Share} alt="lien de redirection vers la demo du projet" />
 									</div>
-								</Link>
+								</a>
 							</div>
 						</div>
 					</div>
