@@ -7,7 +7,7 @@ function Footer() {
 		<div className="text-center pt-[10vh]">
 			<div className="flex justify-center gap-[40px] ">
 				{Socials.map((item) => (
-					<Link target="blank" key={item.id} to={item.link}>
+					<Link key={item.id} to={item.link}>
 						<img
 							className="cursor-pointer hover:scale-110 transition-all duration-200"
 							key={item.id}
