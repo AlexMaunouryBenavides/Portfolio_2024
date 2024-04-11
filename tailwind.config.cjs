@@ -19,6 +19,7 @@ module.exports = {
       fontFamily: {
         'genos': ['Genos', 'sans-serif'],
         'gruppo': ['gruppo', 'sans-serif'],
+        'Lora': ['Lora', 'sans-serif'],
       },
       animation: {
         shine: "shine 1s",

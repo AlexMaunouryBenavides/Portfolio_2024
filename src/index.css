@@ -1,9 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+	scroll-behavior: smooth;
+}
 
 body {
-	background-color: #f4fcff;
+	background-color: #fffdf7;
 }
 .cursor {
 	background-color: black;
@@ -32,4 +35,123 @@ body {
 	height: 100vh;
 	background-color: black;
 	transform-origin: top;
+}
+
+.box {
+	background-size: cover;
+	background-position: center center;
+	box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.3);
+	animation: animateProfil 5s ease-in-out infinite;
+	transition: all 1s ease-in-out;
+}
+
+@keyframes animateProfil {
+	0% {
+		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+	}
+	50% {
+		border-radius: 30% 60% 70% 40%/ 50% 60% 30% 60%;
+	}
+
+	100% {
+		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+	}
+}
+
+svg {
+	height: 80px;
+	position: absolute;
+	width: 80px;
+}
+
+.plate {
+	height: 80px;
+	width: 80px;
+}
+.burger {
+	filter: url(#gooeyness);
+}
+.x {
+	transform: scale(0);
+	transition: transform 400ms;
+}
+.line {
+	fill: none;
+	stroke: black;
+	stroke-width: 6px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	transform-origin: 50%;
+	transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+}
+.x .line {
+	stroke-width: 5.5px;
+}
+.plate8 .line {
+	transition: stroke-dasharray 400ms 100ms, stroke-dashoffset 400ms 100ms, transform 400ms 100ms;
+}
+.plate8 .line1 {
+	stroke-dasharray: 21 201;
+}
+.plate8 .line2 {
+	stroke-dasharray: 21 201;
+	transition-delay: 20ms;
+}
+.plate8 .line3 {
+	stroke-dasharray: 21 201;
+	transition-delay: 40ms;
+}
+.plate8 .line4 {
+	stroke-dasharray: 21 201;
+	transition-delay: 60ms;
+}
+.plate8 .line5 {
+	stroke-dasharray: 21 201;
+	transition-delay: 80ms;
+}
+.plate8 .line6 {
+	stroke-dasharray: 21 201;
+	transition-delay: 100ms;
+}
+.plate8 .x {
+	transition: transform 400ms 50ms;
+}
+.active .x {
+	transform: scale(1);
+}
+
+.active.plate8 .line {
+	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms, transform 400ms;
+}
+.active.plate8 .line1 {
+	stroke-dasharray: 5 201;
+	stroke-dashoffset: -158px;
+}
+.active.plate8 .line2 {
+	stroke-dasharray: 5 201;
+	stroke-dashoffset: -158px;
+	transition-delay: 20ms;
+}
+.active.plate8 .line3 {
+	stroke-dasharray: 5 201;
+	stroke-dashoffset: -158px;
+	transition-delay: 40ms;
+}
+.active.plate8 .line4 {
+	stroke-dasharray: 5 201;
+	stroke-dashoffset: -158px;
+	transition-delay: 60ms;
+}
+.active.plate8 .line5 {
+	stroke-dasharray: 5 201;
+	stroke-dashoffset: -158px;
+	transition-delay: 80ms;
+}
+.active.plate8 .line6 {
+	stroke-dasharray: 5 201;
+	stroke-dashoffset: -158px;
+	transition-delay: 100ms;
+}
+.active.plate8 .x {
+	transition: transform 400ms 50ms;
 }

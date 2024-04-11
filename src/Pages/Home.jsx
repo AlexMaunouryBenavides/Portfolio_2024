@@ -1,21 +1,29 @@
-import React, { useEffect, useRef, useState } from 'react';
-import Card from '../Components/Card';
-import data from '../Data/data';
+import React from 'react';
+
 import Footer from '../Components/Footer';
-import { Link } from 'react-router-dom';
+
 import Header from '../Components/Header';
+import Hero from '../Components/Hero';
+import Projects from '../Components/Projects';
+import Contact from '../Components/Contact';
 
 function Home() {
 	return (
-		<div className="min-h-screen">
-			<Header />
-			<div className=" max-w-[625px]  m-auto flex justify-center flex-wrap gap-[20px]">
-				{data.map((item) => (
-					<Link key={item.id} to={`/stack/${item.id}`}>
-						<Card stack={item.stack} />
-					</Link>
-				))}
-			</div>
+		<div>
+			<section className="lg:h-screen h-full">
+				<Header />
+				<div className="max-w-5xl m-auto">
+					<Hero />
+				</div>
+			</section>
+
+			<section id="projects" className="max-w-5xl m-auto">
+				<Projects />
+			</section>
+			<section className="max-w-5xl m-auto py-10" id="contact">
+				<Contact />
+			</section>
+
 			<Footer />
 		</div>
 	);
